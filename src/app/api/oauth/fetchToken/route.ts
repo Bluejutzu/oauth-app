@@ -2,7 +2,7 @@ import "dotenv";
 import { redirect } from "next/navigation";
 import { NextResponse, type NextRequest } from "next/server";
 
-export async function POST(req: Request, res: NextResponse, res2: Response) {
+export async function POST(req: Request) {
   const DISCORD_ENDPOINT = "https://discord.com/api/v10";
   const CLIENT_ID = process.env.DISCORD_CLIENT_ID!;
   const CLIENT_SECRET = process.env.DISCORD_CLIENT_SECRET!;
